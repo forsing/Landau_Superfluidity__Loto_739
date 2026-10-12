@@ -10,9 +10,9 @@ import numpy as np
 
 
 
-DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv"
-# DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv"
-# DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv"
+DEFAULT = "/data/loto7_4698_k80.csv"
+# DEFAULT = "/data/loto7_4698_k80_loto_2971.csv"
+# DEFAULT = "/data/loto7_4698_k80_loto_plus_1727.csv"
 
 
 
@@ -439,42 +439,42 @@ if __name__ == "__main__":
 
 
 """
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv; redova=4698
+Ulaz: /data/loto7_4698_k80.csv; redova=4698
 Validacija: redovi 4587..4634; alpha_long=1; alpha_local=1; prosek=1.3333
 Test: redovi 4635..4698
 LANDAU V3 SUPERFLUIDITY HE II: prosek=1.3594; pogodaka 0..7=[11, 30, 14, 7, 2, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2188; pogodaka 0..7=[13, 30, 16, 4, 1, 0, 0, 0]
 Pozadina bez pobuda: prosek=1.4219; pogodaka 0..7=[10, 27, 19, 6, 2, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 4699: 6,10,12,17,21,27,34
+SLEDECI RED 4699: 6,x,12,y,21,z,34
 Trosak projekcije=0.9322975687; globalni minimum potvrden.
 Jacina dugih pobuda=1.791527; lokalnih pobuda=2.814317
 Kanali pobuda su strukturna analogija; trosak rangiranja nije verovatnoca.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv; redova=2971
+Ulaz: /data/loto7_4698_k80_loto_2971.csv; redova=2971
 Validacija: redovi 2860..2907; alpha_long=100; alpha_local=1; prosek=1.3542
 Test: redovi 2908..2971
 LANDAU V3 SUPERFLUIDITY HE II: prosek=1.2969; pogodaka 0..7=[14, 24, 19, 7, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[11, 30, 16, 7, 0, 0, 0, 0]
 Pozadina bez pobuda: prosek=1.2812; pogodaka 0..7=[15, 23, 19, 7, 0, 0, 0, 0]
 Poslednji red: 18,20,21,24,29,34,38
-SLEDECI RED 2972: 4,9,11,17,20,28,35
+SLEDECI RED 2972: 4,x,11,y,20,z,35
 Trosak projekcije=1.3394278419; globalni minimum potvrden.
 Jacina dugih pobuda=1.862265; lokalnih pobuda=2.792055
 Kanali pobuda su strukturna analogija; trosak rangiranja nije verovatnoca.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
+Ulaz: /data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
 Validacija: redovi 1616..1663; alpha_long=1; alpha_local=1; prosek=1.5625
 Test: redovi 1664..1727
 LANDAU V3 SUPERFLUIDITY HE II: prosek=1.3438; pogodaka 0..7=[12, 24, 23, 4, 1, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[15, 23, 18, 8, 0, 0, 0, 0]
 Pozadina bez pobuda: prosek=1.2656; pogodaka 0..7=[12, 27, 21, 4, 0, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 1728: 3,9,14,19,24,30,34
+SLEDECI RED 1728: 3,x,14,y,24,z,34
 Trosak projekcije=1.3285711428; globalni minimum potvrden.
 Jacina dugih pobuda=1.287900; lokalnih pobuda=2.157951
 Kanali pobuda su strukturna analogija; trosak rangiranja nije verovatnoca.
@@ -492,7 +492,6 @@ Na poslednja 64 kola:
 
 Metod	Prosečan broj pogodaka
 V3	    1,3594
-
 Prethodna kombinacija	1,2188
 Spora pozadina bez pobuda	1,4219
 
