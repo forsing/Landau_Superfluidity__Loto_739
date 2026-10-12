@@ -8,9 +8,9 @@ from pathlib import Path
 import numpy as np
 
 DEFAULTS = (
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv",
+    "/data/loto7_4698_k80.csv",
+    "/data/loto7_4698_k80_loto_2971.csv",
+    "/data/loto7_4698_k80_loto_plus_1727.csv",
 )
 
 N, K, WINDOW = 39, 7, 64
@@ -465,7 +465,7 @@ if __name__ == "__main__":
 
 
 """
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv; redova=4698
+Ulaz: /data/loto7_4698_k80.csv; redova=4698
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -478,7 +478,7 @@ Test: redovi 4635..4698
 LANDAU V3 SUPERFLUIDITY: prosek=1.2188; pogodaka 0..7=[15, 26, 18, 4, 1, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2188; pogodaka 0..7=[13, 30, 16, 4, 1, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 4699: 4,5,6,11,12,28,29
+SLEDECI RED 4699: 4,x,6,y,12,z,29
 Skor S=-E: 1.2990448930; kandidata=14396
 Jacina dugih pobuda=2.424871; lokalnih=3.328663
 Izbor: poslednje 64 kombinacije i sve njihove zamene jednog broja.
@@ -486,7 +486,7 @@ Pobude su strukturna analogija; skor nije verovatnoca.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv; redova=2971
+Ulaz: /data/loto7_4698_k80_loto_2971.csv; redova=2971
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -499,7 +499,7 @@ Test: redovi 2908..2971
 LANDAU V3 SUPERFLUIDITY: prosek=1.2656; pogodaka 0..7=[13, 24, 24, 3, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[11, 30, 16, 7, 0, 0, 0, 0]
 Poslednji red: 18,20,21,24,29,34,38
-SLEDECI RED 2972: 1,12,13,14,15,20,22
+SLEDECI RED 2972: 1,x,13,y,15,z,22
 Skor S=-E: 2.2721874326; kandidata=14392
 Jacina dugih pobuda=2.366432; lokalnih=4.516636
 Izbor: poslednje 64 kombinacije i sve njihove zamene jednog broja.
@@ -507,7 +507,7 @@ Pobude su strukturna analogija; skor nije verovatnoca.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
+Ulaz: /data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -520,7 +520,7 @@ Test: redovi 1664..1727
 LANDAU V3 SUPERFLUIDITY: prosek=1.1875; pogodaka 0..7=[9, 39, 12, 3, 1, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[15, 23, 18, 8, 0, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 1728: 9,10,29,30,31,34,37
+SLEDECI RED 1728: 9,x,29,y,31,z,37
 Skor S=-E: 2.0070585246; kandidata=14388
 Jacina dugih pobuda=0.894427; lokalnih=3.730952
 Izbor: poslednje 64 kombinacije i sve njihove zamene jednog broja.
@@ -534,9 +534,9 @@ Pobude se računaju prema prethodnoj stvarnoj kombinaciji.
 Model uči njihovu energiju i spregu, pa bira celu kombinaciju bez prosečenja položaja ili amplituda.
 
 Fajl	                Sledeća kombinacija	Prosek pogodaka na 64 kola	Prethodna kombinacija
-Objedinjeni, red 4699	4,5,6,11,12,28,29	1,2188	                    1,2188
-Loto, red 2972	        1,12,13,14,15,20,22	1,2656	                    1,2969
-Loto Plus, red 1728	    9,10,29,30,31,34,37	1,1875	                    1,2969
+Objedinjeni, red 4699	4,x,6,y,12,z,29	    1,2188	                    1,2188
+Loto, red 2972	        1,x,13,y,15,z,22	1,2656	                    1,2969
+Loto Plus, red 1728	    9,x,29,y,31,z,37	1,1875	                    1,2969
 
 Na ovom testu nije pokazana prednost nad prethodnom kombinacijom. 
 Provereni su rekonstrukcija, ponovljivost i hronologija. 
